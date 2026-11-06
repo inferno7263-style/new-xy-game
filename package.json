@@ -1,0 +1,13 @@
+{
+  "name": "alphabet-war",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "start": "node scripts/serve.mjs",
+    "build": "node scripts/build.mjs",
+    "test": "node tests/engine.test.mjs && node tests/camera.test.mjs"
+  },
+  "engines": { "node": ">=20" }
+}

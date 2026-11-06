@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b0d11">
+  <meta name="description" content="Enter the shattered sky. Play as X-Man and battle a relentless Y-Man in a free 2D platform fighting game.">
+  <title>Alphabet War — The Shattered Sky</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <svg class="icon-library" aria-hidden="true"><defs>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 19 19 5M5 5h14v14"/></symbol>
+    <symbol id="i-sound" viewBox="0 0 24 24"><path d="m11 5-6 5H2v4h3l6 5zM15 8a6 6 0 0 1 0 8M18 5a10 10 0 0 1 0 14"/></symbol>
+    <symbol id="i-mute" viewBox="0 0 24 24"><path d="m11 5-6 5H2v4h3l6 5zM16 9l6 6m0-6-6 6"/></symbol>
+    <symbol id="i-expand" viewBox="0 0 24 24"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/></symbol>
+    <symbol id="i-pause" viewBox="0 0 24 24"><path d="M8 5v14M16 5v14"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="m8 5 11 7-11 7z"/></symbol>
+    <symbol id="i-restart" viewBox="0 0 24 24"><path d="M4 10a8 8 0 1 1 0 5M4 4v6h6"/></symbol>
+    <symbol id="i-help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 1 1 3.5 2.3c-1 .5-1 1-1 2.2M12 17v.1"/></symbol>
+    <symbol id="i-slash" viewBox="0 0 40 40"><path d="M8 31 30 6 20 25l13-7L11 35l5-11z"/></symbol>
+    <symbol id="i-cross" viewBox="0 0 40 40"><path d="m8 6 24 28-8-17 10-9L6 32l11-8z"/></symbol>
+    <symbol id="i-burst" viewBox="0 0 40 40"><path d="m20 3 4 11 10-7-6 11 10 3-11 4 6 10-12-7-4 10-3-12-11 6 8-11-8-5 12-1z"/></symbol>
+    <symbol id="i-dash" viewBox="0 0 40 40"><path d="m10 7 24 13-24 13 7-13zM4 13h7M2 20h9M4 27h7"/></symbol>
+    <symbol id="i-laser" viewBox="0 0 40 40"><path d="m8 9 6 11-6 11M16 10l5 10-5 10M13 20h25M22 14h14M22 26h14"/><ellipse cx="12" cy="20" rx="6" ry="13"/></symbol>
+    <symbol id="i-orbit" viewBox="0 0 40 40"><path d="M31 7C5-2-4 30 18 33c16 4 24-14 15-23M27 4l6 6-8 2M11 17l-5 8 9 1"/><ellipse cx="20" cy="20" rx="16" ry="6" transform="rotate(-30 20 20)"/></symbol>
+    <symbol id="i-nova" viewBox="0 0 40 40"><path d="m5 30 15-9-9-3 12-2-1-12 6 9 9-9-5 14 7 3-11 4 2 12-9-8-9 8 2-9zM4 35l12-12"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 40 40"><path d="M20 4 34 9v12c-1 8-9 13-14 16C15 34 7 29 6 21V9zM12 14l16 14m0-14L12 28"/></symbol>
+    <symbol id="i-evade" viewBox="0 0 40 40"><path d="m20 8-12 12 12 12M9 20h21M25 7l5 3M30 30l-5 3M30 15h7M30 25h7"/></symbol>
+  </defs></svg>
+
+  <header class="site-header">
+    <a class="brand" href="./" aria-label="Alphabet War home"><span class="brand-symbol">X</span><span>ALPHABET<span class="brand-war">WAR<span class="brand-dot">®</span></span></span></a>
+    <nav aria-label="Main navigation"><span class="nav-active">PLAY<span class="nav-line"></span></span><button class="nav-button" id="nav-controls">HOW TO PLAY <svg class="icon"><use href="#i-arrow"/></svg></button></nav>
+    <div class="header-status"><span class="status-dot"></span> SYSTEM ONLINE<span class="header-divider"></span><span class="edition">VOL. 01 / 2026</span></div>
+  </header>
+
+  <main>
+    <section class="arena-heading" aria-labelledby="page-title">
+      <div><div class="eyebrow"><span class="red-line"></span> THE BATTLEGROUNDS <span class="muted">/ 001</span></div><h1 id="page-title">THE SHATTERED SKY<span class="title-dot">.</span></h1><p>Two warriors. One floating battlefield. No way back.</p></div>
+      <div class="match-type"><span class="small-label">GAME MODE</span><div><span class="mode-diamond"></span> SOLO BATTLE <span class="ai-tag">VS AI</span></div></div>
+    </section>
+
+    <section class="game-shell" aria-label="Alphabet War game arena">
+      <div class="game-toolbar"><div class="arena-location"><span class="live-dot"></span><span>AETHER ISLANDS</span><span class="toolbar-separator">/</span><span class="muted">EXPANDED ARENA</span><span class="camera-readout">AUTO CAM <b id="camera-zoom">1.00×</b></span></div><div class="toolbar-actions"><span class="session-status" id="session-status">AWAITING CHALLENGER</span><button id="sound-button" class="icon-button" aria-label="Enable sound" title="Enable sound"><svg class="icon"><use href="#i-mute"/></svg></button><button id="fullscreen-button" class="icon-button" aria-label="Toggle fullscreen" title="Fullscreen"><svg class="icon"><use href="#i-expand"/></svg></button></div></div>
+
+      <div class="arena-viewport" id="arena-viewport">
+        <canvas id="game-canvas" width="1440" height="780" tabindex="0" aria-label="Battle arena. A and D move, hold Space to jump. J slash, K cross strike, O Inferno Orbit, U laser, I Nova Breaker, L burst, Shift dash. Hold F to guard or time a parry, E to evade. Equal-power attacks cancel; stronger attacks break through."></canvas>
+        <div class="arena-vignette"></div>
+        <div class="battle-hud" aria-label="Fighter health">
+          <div class="fighter-hud player-hud"><div class="fighter-emblem x-emblem">X</div><div class="fighter-info"><div class="fighter-name">X–MAN <span class="fighter-role">YOU</span><span class="health-number"><b id="player-hp">100</b><small> / 100</small></span></div><div class="health-track"><div class="health-fill player-fill" id="player-health"></div><i></i><i></i><i></i></div><div class="fighter-subtitle">THE BLADE LETTER <span class="hud-energy"><span id="energy-value">0</span>% ENERGY</span></div><div class="guard-hud"><span id="player-guard-status">GUARD</span><div class="stamina-track"><i id="player-stamina"></i></div><b id="player-stamina-value">100</b></div></div></div>
+          <div class="round-hud"><span>ROUND 01</span><strong id="battle-time">00:00</strong><span class="round-hud-bottom">ELIMINATION</span></div>
+          <div class="fighter-hud enemy-hud"><div class="fighter-emblem y-emblem">Y</div><div class="fighter-info"><div class="fighter-name"><span class="health-number"><b id="enemy-hp">100</b><small> / 100</small></span><span class="fighter-role ai-role">HUNTER AI</span> Y–MAN</div><div class="health-track"><div class="health-fill enemy-fill" id="enemy-health"></div><i></i><i></i><i></i></div><div class="fighter-subtitle"><span class="enemy-difficulty" id="enemy-difficulty">ADAPTIVE COMBAT</span> THE BRANCH LETTER</div><div class="guard-hud enemy-guard-hud"><b id="enemy-stamina-value">100</b><div class="stamina-track"><i id="enemy-stamina"></i></div><span id="enemy-guard-status">GUARD</span></div></div></div>
+        </div>
+
+        <div class="ready-overlay" id="ready-overlay">
+          <div class="intro-topline"><span></span> PREPARE FOR IMPACT <span></span></div>
+          <h2>THE SKY HAS<br>NO <em>SECOND PLACE.</em></h2>
+          <p>Take the blade. Break the branches.</p>
+          <button class="primary-button" id="start-button">ENTER THE ARENA <svg class="icon"><use href="#i-arrow"/></svg></button>
+          <span class="start-hint">PRESS <kbd>ENTER</kbd> TO BEGIN</span>
+        </div>
+
+        <div class="enemy-intent" id="enemy-intent"><span>Y–MAN INTENT</span><b id="enemy-move">HUNTING</b></div><div class="world-map" aria-label="Fighter positions across the expanded arena"><div class="world-map-label"><span>AETHER EXPANSE</span><b id="world-span">3,200</b></div><div class="world-map-track"><i class="map-camera" id="map-camera"></i><i class="map-player" id="map-player"></i><i class="map-enemy" id="map-enemy"></i></div></div><div class="arena-bottom"><div class="coordinates"><span class="coordinate-cross">+</span> SECTOR 07 <span class="muted">/</span> ALT. 4,200 M</div><div id="battle-hint" class="battle-hint">YOUR FIGHT. YOUR RULES.</div><button id="pause-button" class="arena-pause" aria-label="Pause battle" title="Pause (Esc)" hidden><svg class="icon"><use href="#i-pause"/></svg><kbd>ESC</kbd></button></div>
+        <div class="combo-display" id="combo-display" aria-live="polite"></div>
+        <div class="clash-banner" id="clash-banner" role="status" aria-live="polite" hidden><span class="clash-banner-label" id="clash-banner-label">ATTACK CLASH</span><strong id="clash-banner-title">CANCELLED</strong><span id="clash-banner-detail">EQUAL POWER · NO DAMAGE</span></div>
+        <div class="match-overlay" id="match-overlay" hidden>
+          <div class="match-dialog" role="dialog" aria-modal="true" aria-labelledby="match-title"><span class="eyebrow" id="match-eyebrow">BATTLE PAUSED</span><h2 id="match-title">CATCH YOUR BREATH.</h2><p id="match-description">The battlefield can wait.</p><div class="match-stats" id="match-stats" hidden></div><button class="primary-button" id="resume-button">BACK TO BATTLE <svg class="icon"><use href="#i-play"/></svg></button><button class="secondary-button" id="restart-button"><svg class="icon"><use href="#i-restart"/></svg> RESTART BATTLE</button></div>
+        </div>
+      </div>
+
+      <div class="arsenal"><div class="arsenal-title"><span class="small-label">KNOW YOUR</span><strong>ARSENAL<svg class="icon arsenal-pointer" aria-hidden="true"><use href="#i-arrow"/></svg></strong></div>
+        <button class="ability" data-ability="slash" aria-label="Blade Slash. J key. Power 1"><div class="ability-icon"><svg><use href="#i-slash"/></svg></div><div><span class="ability-name">BLADE SLASH</span><span class="ability-description"><span class="power-tier">PWR I</span> Close-range combo</span></div><kbd>J</kbd><div class="cooldown-bar"></div></button>
+        <button class="ability" data-ability="cross" aria-label="Cross Strike. K key. Power 1"><div class="ability-icon"><svg><use href="#i-cross"/></svg></div><div><span class="ability-name">CROSS STRIKE</span><span class="ability-description"><span class="power-tier">PWR I</span> Ranged energy</span></div><kbd>K</kbd><div class="cooldown-bar"></div></button>
+        <button class="ability special-ability" data-ability="orbit" aria-label="Inferno Orbit. O key. Power 2 spinning slash"><div class="ability-icon"><svg><use href="#i-orbit"/></svg></div><div><span class="ability-name">INFERNO ORBIT <span class="new-ability-label">NEW</span></span><span class="ability-description"><span class="power-tier tier-two">PWR II</span> Spinning flame slash</span></div><kbd>O</kbd><div class="cooldown-bar"></div></button>
+        <button class="ability laser-ability" data-ability="laser" aria-label="High Laser. U key. Power 3"><div class="ability-icon"><svg><use href="#i-laser"/></svg></div><div><span class="ability-name">HIGH LASER</span><span class="ability-description"><span class="power-tier tier-three">PWR III</span> <span id="laser-description">Piercing beam</span></span></div><kbd>U</kbd><div class="cooldown-bar"></div></button>
+        <button class="ability special-ability" data-ability="nova" aria-label="Nova Breaker. I key. Power 3 explosive strike"><div class="ability-icon"><svg><use href="#i-nova"/></svg></div><div><span class="ability-name">NOVA BREAKER <span class="new-ability-label">NEW</span></span><span class="ability-description"><span class="power-tier tier-three">PWR III</span> Explosive strike</span></div><kbd>I</kbd><div class="cooldown-bar"></div></button>
+        <button class="ability ultimate" data-ability="burst" aria-label="X Burst. L key. Power 4. Requires full energy"><div class="ability-icon"><svg><use href="#i-burst"/></svg></div><div><span class="ability-name">X–BURST <span class="ultimate-label">ULT</span></span><span class="ability-description"><span class="power-tier tier-four">PWR IV</span> <span id="burst-description">Charge energy</span></span></div><kbd>L</kbd><div class="cooldown-bar" id="burst-charge"></div></button>
+        <button class="ability" data-ability="dash" aria-label="Phase Dash. Shift key"><div class="ability-icon"><svg><use href="#i-dash"/></svg></div><div><span class="ability-name">PHASE DASH</span><span class="ability-description">Evade incoming attacks</span></div><kbd class="wide-key">SHIFT</kbd><div class="cooldown-bar"></div></button>
+      </div>
+      <div class="defense-dock" aria-label="Defensive moves">
+        <div class="defense-dock-title"><span class="small-label">SURVIVE THE HUNT</span><strong>DEFENSIVE SYSTEMS</strong></div>
+        <button class="defense-action" data-guard aria-label="Hold to guard. F key. Raise just before impact for a perfect parry" aria-pressed="false"><svg class="defense-icon"><use href="#i-shield"/></svg><span><strong>BLADE GUARD</strong><small id="guard-description">Hold to block · time a parry</small></span><kbd>HOLD F</kbd></button>
+        <button class="defense-action" data-ability="evade" aria-label="Evasive step. E key. Costs 20 stamina"><svg class="defense-icon"><use href="#i-evade"/></svg><span><strong>EVASIVE STEP</strong><small id="evade-description">Reposition · 20 stamina</small></span><kbd>E</kbd><div class="cooldown-bar"></div></button>
+        <div class="defense-stamina"><span>STAMINA <b id="stamina-label">100 / 100</b></span><div class="defense-stamina-track"><i id="defense-stamina-fill"></i></div><small>Release guard to recover.</small></div>
+      </div>
+      <div class="clash-rules"><div class="clash-rules-title"><span class="rules-spark">✦</span> CLASH SYSTEM</div><span><b>I × I</b> EQUAL POWER <i>Both attacks cancel. No damage.</i></span><span><b>II &gt; I</b> HIGHER POWER <i>The stronger attack breaks through.</i></span><span class="clash-total" id="clash-total">TIME YOUR COUNTER.</span></div>
+    </section>
+
+    <div class="under-arena"><div class="movement-controls"><span><kbd>A</kbd><kbd>D</kbd> MOVE</span><span><kbd>SPACE</kbd> DOUBLE JUMP</span><span><kbd>↓</kbd> DROP THROUGH</span></div><button class="text-button" id="controls-button"><svg class="icon"><use href="#i-help"/></svg> ALL CONTROLS</button><span class="tip"><span class="tip-label">FIELD NOTE</span> Dodge the flame warning. Guard the crescent.</span></div>
+    <div class="touch-controls" aria-label="Touch controls"><button data-move="left" aria-label="Move left">◀</button><button data-move="right" aria-label="Move right">▶</button><button id="touch-jump" aria-label="Hold to jump higher">JUMP ↑</button><button data-touch-attack="slash">SLASH</button><button data-touch-attack="laser">LASER</button><button data-touch-attack="dash">DASH</button><button data-guard aria-label="Hold to guard" aria-pressed="false">GUARD</button><button data-touch-attack="evade">EVADE</button></div>
+    <footer><span class="footer-brand">ALPHABET WAR</span><span>A CLASH WRITTEN IN THE SKY.</span><span class="footer-right"><span class="status-dot"></span> BUILT FOR THE BATTLE.</span></footer>
+  </main>
+
+  <dialog id="controls-dialog"><div class="help-dialog"><button class="dialog-close" aria-label="Close controls">×</button><div class="eyebrow"><span class="red-line"></span> THE FIELD MANUAL</div><h2>MASTER YOUR LETTER.</h2><p>Play as X-Man. Defeat Y-Man before he takes you down.</p><div class="controls-grid"><div><span>Move left / right</span><span><kbd>A</kbd><kbd>D</kbd> or <kbd>←</kbd><kbd>→</kbd></span></div><div><span>Jump / double jump · hold for height</span><span><kbd>SPACE</kbd> / <kbd>W</kbd> / <kbd>↑</kbd></span></div><div><span>Drop through a platform</span><span><kbd>S</kbd> / <kbd>↓</kbd></span></div><div><span>Blade Slash</span><kbd>J</kbd></div><div><span>Cross Strike · ranged</span><kbd>K</kbd></div><div><span>Inferno Orbit · spinning slash · power II</span><kbd>O</kbd></div><div><span>High Laser · piercing beam · power III</span><kbd>U</kbd></div><div><span>Nova Breaker · explosive strike · power III</span><kbd>I</kbd></div><div><span>X-Burst · full energy</span><kbd>L</kbd></div><div><span>Phase Dash · dodge</span><kbd>SHIFT</kbd></div><div><span>Guard · hold / perfect parry · timed raise</span><kbd>F</kbd></div><div><span>Evasive step · 20 stamina</span><kbd>E</kbd></div><div><span>Pause / resume</span><kbd>ESC</kbd></div></div><div class="help-defense"><strong>SPACE TO ESCAPE. TOOLS TO SURVIVE.</strong><p>The 3,200-unit arena gives you longer escape routes. The camera automatically widens when fighters separate and closes in when they meet. Hold F to reduce frontal damage; raise your guard just before impact for a perfect parry. Stamina drains while guarding and recovers when you release. Press E to evade in your movement direction, or step backward when standing still. Y-Man can guard and dodge too. His new crescent, thorn volley, and telegraphed spirit flame can all be countered or avoided.</p></div><div class="help-clash-rules"><strong>POWER DECIDES THE CLASH.</strong><p>When opposing attacks meet, equal power cancels both before either can deal damage. Higher power destroys the weaker attack and carries on at full strength. A power I Cross Strike cancels a normal blast; use power II or higher against Y-Man’s heavy blasts. The power labels in your arsenal show each move’s level.</p></div><div class="difficulty-setting"><div><strong>THE CHALLENGE</strong><p>Choose how fiercely Y-Man hunts.</p></div><div class="difficulty-options" aria-label="Difficulty"><button data-difficulty="normal" class="selected" aria-pressed="true">NORMAL</button><button data-difficulty="hard" aria-pressed="false">RELENTLESS</button></div></div><p class="help-note">Tap jump for a short hop, or hold for full height. Jump again in midair to double jump with a ghost trail. Press U to charge a piercing High Laser; face your opponent before firing. Land attacks to charge your X-Burst. Dash through blasts and use the upper platforms to gain an advantage. Falling costs health and returns you to the arena.</p><button class="primary-button dialog-done">GOT IT. LET’S FIGHT. <svg class="icon"><use href="#i-arrow"/></svg></button></div></dialog>
+  <div class="toast" role="status" id="toast"></div>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

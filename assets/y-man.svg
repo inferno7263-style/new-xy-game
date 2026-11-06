@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 260"><defs>
+<linearGradient id="armor" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#596777"/><stop offset=".32" stop-color="#242a38"/><stop offset=".72" stop-color="#090e17"/><stop offset="1" stop-color="#333b4b"/></linearGradient>
+<linearGradient id="steel" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f5f7ff"/><stop offset=".4" stop-color="#b4c2d1"/><stop offset=".46" stop-color="#435267"/><stop offset=".74" stop-color="#eef5ff"/><stop offset="1" stop-color="#6b778b"/></linearGradient>
+<linearGradient id="dark" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#283848"/><stop offset="1" stop-color="#05090e"/></linearGradient>
+<linearGradient id="red" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffb6b5"/><stop offset=".3" stop-color="#ff334b"/><stop offset=".7" stop-color="#bd0823"/><stop offset="1" stop-color="#5c041b"/></linearGradient>
+<linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff4be"/><stop offset=".4" stop-color="#d9ab54"/><stop offset=".5" stop-color="#71501f"/><stop offset=".76" stop-color="#f1d191"/><stop offset="1" stop-color="#9c6e30"/></linearGradient>
+<linearGradient id="green" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#edffba"/><stop offset=".3" stop-color="#a5ff42"/><stop offset=".7" stop-color="#32ce39"/><stop offset="1" stop-color="#087e41"/></linearGradient>
+<filter id="glow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="2.6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<!-- Pale split mantle. -->
+<path d="M109 102C76 87 59 115 25 104L45 124 20 147C48 149 66 130 87 133L62 170C89 160 107 141 116 113Z" fill="#bca378"/>
+<path d="M99 102C72 102 57 126 28 141 55 143 73 119 105 114Z" fill="#e9d9ac"/>
+<path d="M115 106C150 117 159 138 203 129L188 147 215 154C175 166 156 144 132 134Z" fill="#aa8855"/>
+<path d="M126 113C158 125 173 142 206 143 177 153 153 131 129 127Z" fill="#f0dfb8"/>
+<!-- Branching golden antlers over the shoulder silhouette. -->
+<g fill="none" stroke-linecap="square">
+<path d="M91 106 72 77 48 63 36 35 31 11M49 63 20 53 10 29M67 75 71 47 60 31M70 49 85 27 88 8M37 36 54 22 52 6M127 105 144 76 168 60 181 33 191 10M167 62 197 51 210 28M145 76 146 45 159 28 156 9M181 34 171 21 175 4" stroke="#5d3c1c" stroke-width="9"/>
+<path d="M91 106 72 77 48 63 36 35 31 11M49 63 20 53 10 29M67 75 71 47 60 31M70 49 85 27 88 8M37 36 54 22 52 6M127 105 144 76 168 60 181 33 191 10M167 62 197 51 210 28M145 76 146 45 159 28 156 9M181 34 171 21 175 4" stroke="url(#gold)" stroke-width="5"/>
+<path d="M90 105 73 78 48 62 37 36M129 103 145 76 168 60 181 35" stroke="#f9e2a4" stroke-width="1.5"/>
+</g>
+<g fill="url(#green)" stroke="#bbff62" stroke-width=".8">
+<path d="M32 19 21 8 24 0 36 10Z"/><path d="M12 35 1 25 0 14 12 23Z"/><path d="M54 12 48 2 56 0 59 7Z"/><path d="M87 17 83 6 91 0 92 11Z"/><path d="M60 36 48 29 46 18 59 26Z"/><path d="M193 18 188 6 199 0 201 10Z"/><path d="M210 35 206 25 219 16 217 29Z"/><path d="M158 16 150 6 159 0 163 9Z"/><path d="M176 11 170 4 180 0 183 5Z"/><path d="M170 27 159 25 158 15 170 20Z"/>
+</g>
+<!-- Far leg. -->
+<path d="M110 157 126 154 133 177 132 198 144 218 144 235 156 245 116 245 116 224 106 196 102 174Z" fill="url(#dark)" stroke="#080f12" stroke-width="3"/>
+<path d="M119 167 130 176 126 193 113 192 109 183Z" fill="url(#gold)"/>
+<path d="M117 197 132 201 141 219 131 228 120 219Z" fill="url(#armor)"/>
+<path d="M125 201 130 204 138 220 131 222Z" fill="url(#green)"/>
+<path d="M128 227 140 231 151 242 117 244 119 236Z" fill="url(#gold)"/>
+<!-- Chest and waist with the glowing Y sigil. -->
+<path d="M88 95 109 90 131 97 145 116 131 141 130 159 110 175 87 157 87 140 76 118Z" fill="url(#armor)" stroke="#080f12" stroke-width="3"/>
+<path d="M92 96 108 106 126 96 136 111 121 124 127 139 111 150 94 139 95 122 82 112Z" fill="#0d241e"/>
+<path d="M84 105 96 108 102 121 89 117Z" fill="url(#steel)"/>
+<path d="M123 106 135 110 129 121 119 124Z" fill="url(#gold)"/>
+<path d="M95 109 109 125 125 108M109 124 110 145" fill="none" stroke="#70fa38" stroke-width="8" filter="url(#glow)"/>
+<path d="M95 109 109 125 125 108M109 124 110 145" fill="none" stroke="#efffc4" stroke-width="3"/>
+<path d="M90 139 106 149 127 139 125 153 111 161 93 153Z" fill="url(#gold)"/>
+<path d="M96 145 110 154 122 146" fill="none" stroke="#111e1c" stroke-width="3"/>
+<path d="M89 155 103 161 96 180 77 182 83 165Z" fill="url(#armor)"/>
+<path d="M116 160 130 152 141 172 130 181 117 176Z" fill="url(#gold)"/>
+<!-- Forward leg and armored leaf plates. -->
+<path d="M91 170 106 178 101 198 88 216 86 233 94 245 55 245 65 229 70 207 76 185Z" fill="url(#dark)" stroke="#080f12" stroke-width="3"/>
+<path d="M91 178 101 181 95 198 80 201 75 193Z" fill="url(#gold)"/>
+<path d="M75 201 91 201 89 216 78 225 68 231 72 210Z" fill="url(#armor)"/>
+<path d="M77 206 84 201 81 217 71 226Z" fill="url(#green)"/>
+<path d="M70 229 82 226 91 241 55 244 62 237Z" fill="url(#gold)"/>
+<path d="M55 244 92 243 95 248 53 248Z" fill="#0a1718"/>
+<!-- Branch pauldrons and far arm. -->
+<path d="M128 94 146 85 158 96 153 116 136 124 125 111Z" fill="url(#steel)" stroke="#081110" stroke-width="3"/>
+<path d="M139 92 150 92 152 103 138 114 131 106Z" fill="url(#gold)"/>
+<path d="M140 117 153 114 159 134 155 147 166 166 154 175 141 155 136 135Z" fill="url(#dark)" stroke="#081110" stroke-width="3"/>
+<path d="M148 131 156 132 151 149 143 144Z" fill="url(#gold)"/>
+<path d="M149 149 158 152 165 168 157 175 145 164Z" fill="url(#green)"/>
+<!-- Forward arm and crystalline blade. -->
+<path d="M82 94 95 104 86 120 69 124 58 109 64 93Z" fill="url(#steel)" stroke="#081110" stroke-width="3"/>
+<path d="M64 99 80 99 86 107 76 116 64 112Z" fill="url(#gold)"/>
+<path d="M66 121 80 125 75 143 59 149 53 139Z" fill="url(#dark)" stroke="#081110" stroke-width="3"/>
+<path d="M57 139 74 140 72 160 57 178 44 171 46 153Z" fill="url(#gold)" stroke="#081110" stroke-width="3"/>
+<path d="M62 143 69 143 61 164 49 172 51 156Z" fill="url(#armor)"/>
+<path d="M48 152 51 171 25 201 19 211 26 177Z" fill="url(#green)" stroke="#c5ff8a" stroke-width="1"/>
+<path d="M45 163 29 197 28 180Z" fill="#e5ffc2"/>
+<path d="M54 170 62 172 60 184 49 190 42 183 45 175Z" fill="#15292a"/>
+<path d="M48 177 59 175M46 182 56 181" stroke="#b5c9b5" stroke-width="2"/>
+<!-- Crown and pointed visor. -->
+<path d="M90 84 78 58 97 66 104 47 112 59 133 49 128 78 119 98 102 98Z" fill="url(#steel)" stroke="#071110" stroke-width="3"/>
+<path d="M88 65 102 75 109 59 115 76 130 58 125 84 113 94 100 90Z" fill="url(#dark)"/>
+<path d="M89 69 102 79 110 84 124 72 118 87 110 94 99 87Z" fill="#8dff3b" filter="url(#glow)"/>
+<path d="M94 74 105 82 111 85 121 76 116 86 110 89 102 85Z" fill="#f3ffd6"/>
+<path d="M105 50 107 75 101 70Z" fill="url(#gold)"/>
+<path d="M101 93 110 99 119 91 114 105 106 104Z" fill="url(#gold)"/>
+<path d="M128 53 120 70 123 58Z" fill="#f3ebbd"/>
+</svg>
